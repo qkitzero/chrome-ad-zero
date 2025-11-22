@@ -1,0 +1,31 @@
+{
+  "name": "chrome-yt-ad-void",
+  "version": "1.0.0",
+  "main": "popup.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "build": "vite build",
+    "dev": "vite",
+    "ncu": "npm-check-updates -u"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.2.1",
+    "@tailwindcss/vite": "^4.1.17",
+    "@tsconfig/vite-react": "^7.0.2",
+    "@types/chrome": "^0.1.31",
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint-config-prettier": "^10.1.8",
+    "npm-check-updates": "^19.1.2",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
+  }
+}
