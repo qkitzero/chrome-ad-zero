@@ -34,11 +34,22 @@ const checkForAds = (() => {
   };
 })();
 
-const observer = new MutationObserver(() => {
-  checkForAds();
-});
+const startObserving = () => {
+  const playerNode = document.getElementById('movie_player');
 
-observer.observe(document.body, {
-  childList: true,
-  subtree: true,
-});
+  if (playerNode) {
+    const observer = new MutationObserver(() => {
+      checkForAds();
+    });
+
+    observer.observe(playerNode, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+    });
+  } else {
+    setTimeout(startObserving, 500);
+  }
+};
+
+startObserving();
