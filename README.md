@@ -1,4 +1,4 @@
-# Chrome AD Zero
+# Chrome Adfuuin
 
 - YouTube
 - Twitch
