@@ -18,8 +18,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["src/content/index.js"]
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["src/content/youtube.js"]
+    },
+    {
+      "matches": ["*://www.twitch.tv/*"],
+      "js": ["src/content/twitch.js"]
     }
   ]
 }
